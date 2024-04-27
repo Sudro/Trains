@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/">
+        <file>TrainMainIcon.png</file>
+        <file>TrainMainIconNew.svg</file>
+        <file>Start.svg</file>
+        <file>Close Icon.svg</file>
+        <file>Close Icon-1.svg</file>
+        <file>startIcon.png</file>
+        <file>newPlusIcon.svg</file>
+        <file>newnewPlusIcon.png</file>
+        <file>newNewMinusIcon.png</file>
+        <file>Group 28.png</file>
+        <file>miniTrainIcon.svg</file>
+        <file>newMiniTrainIcon.png</file>
+        <file>userButton.png</file>
+        <file>adminButton.png</file>
+        <file>userButton2.png</file>
+        <file>adminButton2.png</file>
+        <file>adminButtonTest.png</file>
+        <file>returnStrelka.svg</file>
+        <file>iconStrelka.png</file>
+        <file>Group 29.png</file>
+    </qresource>
+</RCC>
