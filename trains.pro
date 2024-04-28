@@ -11,15 +11,18 @@ CONFIG += c++17
 SOURCES += \
     choicewindow.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    menuwindow.cpp
 
 HEADERS += \
     choicewindow.h \
-    mainwindow.h
+    mainwindow.h \
+    menuwindow.h
 
 FORMS += \
     choicewindow.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    menuwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -7,17 +7,26 @@
 #include <QGraphicsDropShadowEffect>
 #include <QPropertyAnimation>
 
+QT_BEGIN_NAMESPACE
 namespace Ui {
 class choicewindow;
 }
+QT_END_NAMESPACE
+
+class MenuWindow; // Вперёд-объявление класса
 
 class choicewindow : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit choicewindow(const QRect &geomentry, QWidget *parent = nullptr);
+    static choicewindow* getInstance();
+    static void releaseInstance();
+    choicewindow(QWidget *parent = nullptr);
+    choicewindow(const QRect &geometry, QWidget *parent = nullptr);
     ~choicewindow();
+
+    static choicewindow* getInstance(const QRect& geometry, QWidget* parent = nullptr);
 
 protected:
     void mousePressEvent(QMouseEvent *event) override {
@@ -64,11 +73,19 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
+    static choicewindow* instance; // Статический указатель на экземпляр
     Ui::choicewindow *ui;
+    MenuWindow *menuWindowInstance = nullptr; // Добавленный указатель на menuwindow
     bool m_dragging = false;
     QPoint m_dragPosition;
     QRect savedGeometry;
+
+
+
+    void setupUi();
 };
 
 #endif // CHOICEWINDOW_H
