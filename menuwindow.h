@@ -63,6 +63,18 @@ private slots:
 
     void on_pushButton_2_released();
 
+    void on_pushButton_3_pressed();
+
+    void on_pushButton_3_released();
+
+    void on_pushButton_6_pressed();
+
+    void on_pushButton_6_released();
+
+    void on_pushButton_7_pressed();
+
+    void on_pushButton_7_released();
+
 private:
     Ui::MenuWindow *ui;
     bool m_dragging = false;

@@ -22,5 +22,8 @@
         <file>iconStrelka.png</file>
         <file>Group 29.png</file>
         <file>routesButton.png</file>
+        <file>stationsButton.png</file>
+        <file>trainsButton.png</file>
+        <file>tariffsButton.png</file>
     </qresource>
 </RCC>

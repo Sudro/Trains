@@ -122,6 +122,7 @@ debug/qrc_Resourses.cpp: ../../Resourses.qrc \
 		../../Group\ 29.png \
 		../../newMiniTrainIcon.png \
 		../../routesButton.png \
+		../../stationsButton.png \
 		../../Start.svg \
 		../../adminButton2.png \
 		../../returnStrelka.svg \
@@ -134,7 +135,9 @@ debug/qrc_Resourses.cpp: ../../Resourses.qrc \
 		../../startIcon.png \
 		../../Close\ Icon-1.svg \
 		../../userButton2.png \
+		../../tariffsButton.png \
 		../../iconStrelka.png \
+		../../trainsButton.png \
 		../../TrainMainIcon.png \
 		../../TrainMainIconNew.svg \
 		../../newnewPlusIcon.png

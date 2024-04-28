@@ -39,8 +39,71 @@ MenuWindow::MenuWindow(QWidget *parent) :
     connect(ui->pushButton_2, &QPushButton::pressed, this, &MenuWindow::on_pushButton_2_pressed);
     connect(ui->pushButton_2, &QPushButton::released, this, &MenuWindow::on_pushButton_2_released);
 
-    // Создаем тень для кнопки (Для 3, 6,7 ещё сделать также)
+    // Создаем тень для кнопки
+    QGraphicsDropShadowEffect *shadowEffect3 = new QGraphicsDropShadowEffect;
+    shadowEffect3->setBlurRadius(30);
+    shadowEffect3->setColor(QColor(0, 0, 0, 160));
+    shadowEffect3->setOffset(3, 3);
 
+    // Применяем тень к кнопке из ui файла
+    ui->pushButton_3->setGraphicsEffect(shadowEffect3);
+
+    // Устанавливаем стили CSS для кнопки
+    ui->pushButton_3->setStyleSheet("QPushButton {"
+                                    "border-radius: 20px;"
+                                    "}"
+                                    "QPushButton:pressed {"
+                                    "border-style: inset;"
+                                    "}"
+                                    );
+
+    // Подключаем обработчик нажатия
+    connect(ui->pushButton_3, &QPushButton::pressed, this, &MenuWindow::on_pushButton_3_pressed);
+    connect(ui->pushButton_3, &QPushButton::released, this, &MenuWindow::on_pushButton_3_released);
+
+    // Создаем тень для кнопки
+    QGraphicsDropShadowEffect *shadowEffect6 = new QGraphicsDropShadowEffect;
+    shadowEffect6->setBlurRadius(30);
+    shadowEffect6->setColor(QColor(0, 0, 0, 160));
+    shadowEffect6->setOffset(3, 3);
+
+    // Применяем тень к кнопке из ui файла
+    ui->pushButton_6->setGraphicsEffect(shadowEffect6);
+
+    // Устанавливаем стили CSS для кнопки
+    ui->pushButton_6->setStyleSheet("QPushButton {"
+                                    "border-radius: 20px;"
+                                    "}"
+                                    "QPushButton:pressed {"
+                                    "border-style: inset;"
+                                    "}"
+                                    );
+
+    // Подключаем обработчик нажатия
+    connect(ui->pushButton_6, &QPushButton::pressed, this, &MenuWindow::on_pushButton_6_pressed);
+    connect(ui->pushButton_6, &QPushButton::released, this, &MenuWindow::on_pushButton_6_released);
+
+    // Создаем тень для кнопки
+    QGraphicsDropShadowEffect *shadowEffect7 = new QGraphicsDropShadowEffect;
+    shadowEffect7->setBlurRadius(30);
+    shadowEffect7->setColor(QColor(0, 0, 0, 160));
+    shadowEffect7->setOffset(3, 3);
+
+    // Применяем тень к кнопке из ui файла
+    ui->pushButton_7->setGraphicsEffect(shadowEffect7);
+
+    // Устанавливаем стили CSS для кнопки
+    ui->pushButton_7->setStyleSheet("QPushButton {"
+                                    "border-radius: 20px;"
+                                    "}"
+                                    "QPushButton:pressed {"
+                                    "border-style: inset;"
+                                    "}"
+                                    );
+
+    // Подключаем обработчик нажатия
+    connect(ui->pushButton_7, &QPushButton::pressed, this, &MenuWindow::on_pushButton_7_pressed);
+    connect(ui->pushButton_7, &QPushButton::released, this, &MenuWindow::on_pushButton_7_released);
 
     // Создаем тень для кнопки
     QGraphicsDropShadowEffect *shadowEffect2 = new QGraphicsDropShadowEffect(this);
@@ -123,7 +186,71 @@ MenuWindow::MenuWindow(const QRect &geometry, QWidget *parent) :
     connect(ui->pushButton_2, &QPushButton::pressed, this, &MenuWindow::on_pushButton_2_pressed);
     connect(ui->pushButton_2, &QPushButton::released, this, &MenuWindow::on_pushButton_2_released);
 
-    // Создаем тень для кнопки (Для 3, 6,7 ещё сделать также)
+    // Создаем тень для кнопки
+    QGraphicsDropShadowEffect *shadowEffect3 = new QGraphicsDropShadowEffect;
+    shadowEffect3->setBlurRadius(30);
+    shadowEffect3->setColor(QColor(0, 0, 0, 160));
+    shadowEffect3->setOffset(3, 3);
+
+    // Применяем тень к кнопке из ui файла
+    ui->pushButton_3->setGraphicsEffect(shadowEffect3);
+
+    // Устанавливаем стили CSS для кнопки
+    ui->pushButton_3->setStyleSheet("QPushButton {"
+                                    "border-radius: 20px;"
+                                    "}"
+                                    "QPushButton:pressed {"
+                                    "border-style: inset;"
+                                    "}"
+                                    );
+
+    // Подключаем обработчик нажатия
+    connect(ui->pushButton_3, &QPushButton::pressed, this, &MenuWindow::on_pushButton_3_pressed);
+    connect(ui->pushButton_3, &QPushButton::released, this, &MenuWindow::on_pushButton_3_released);
+
+    // Создаем тень для кнопки
+    QGraphicsDropShadowEffect *shadowEffect6 = new QGraphicsDropShadowEffect;
+    shadowEffect6->setBlurRadius(30);
+    shadowEffect6->setColor(QColor(0, 0, 0, 160));
+    shadowEffect6->setOffset(3, 3);
+
+    // Применяем тень к кнопке из ui файла
+    ui->pushButton_6->setGraphicsEffect(shadowEffect6);
+
+    // Устанавливаем стили CSS для кнопки
+    ui->pushButton_6->setStyleSheet("QPushButton {"
+                                    "border-radius: 20px;"
+                                    "}"
+                                    "QPushButton:pressed {"
+                                    "border-style: inset;"
+                                    "}"
+                                    );
+
+    // Подключаем обработчик нажатия
+    connect(ui->pushButton_6, &QPushButton::pressed, this, &MenuWindow::on_pushButton_6_pressed);
+    connect(ui->pushButton_6, &QPushButton::released, this, &MenuWindow::on_pushButton_6_released);
+
+    // Создаем тень для кнопки
+    QGraphicsDropShadowEffect *shadowEffect7 = new QGraphicsDropShadowEffect;
+    shadowEffect7->setBlurRadius(30);
+    shadowEffect7->setColor(QColor(0, 0, 0, 160));
+    shadowEffect7->setOffset(3, 3);
+
+    // Применяем тень к кнопке из ui файла
+    ui->pushButton_7->setGraphicsEffect(shadowEffect7);
+
+    // Устанавливаем стили CSS для кнопки
+    ui->pushButton_7->setStyleSheet("QPushButton {"
+                                    "border-radius: 20px;"
+                                    "}"
+                                    "QPushButton:pressed {"
+                                    "border-style: inset;"
+                                    "}"
+                                    );
+
+    // Подключаем обработчик нажатия
+    connect(ui->pushButton_7, &QPushButton::pressed, this, &MenuWindow::on_pushButton_7_pressed);
+    connect(ui->pushButton_7, &QPushButton::released, this, &MenuWindow::on_pushButton_7_released);
 
 
     // Создаем тень для кнопки
@@ -279,6 +406,72 @@ void MenuWindow::on_pushButton_2_released()
 {
     // Восстанавливаем эффект тени при отпускании
     auto effect = dynamic_cast<QGraphicsDropShadowEffect*>(ui->pushButton_2->graphicsEffect());
+    if (effect) {
+        effect->setBlurRadius(30);
+        effect->setOffset(3, 3);
+    }
+}
+
+void MenuWindow::on_pushButton_3_pressed()
+{
+    // Изменяем эффект тени при нажатии
+    auto effect = dynamic_cast<QGraphicsDropShadowEffect*>(ui->pushButton_3->graphicsEffect());
+    if (effect) {
+        effect->setBlurRadius(30);
+        effect->setColor(QColor(0, 0, 0, 160));
+        effect->setOffset(5, 5);
+    }
+}
+
+
+void MenuWindow::on_pushButton_3_released()
+{
+    // Восстанавливаем эффект тени при отпускании
+    auto effect = dynamic_cast<QGraphicsDropShadowEffect*>(ui->pushButton_3->graphicsEffect());
+    if (effect) {
+        effect->setBlurRadius(30);
+        effect->setOffset(3, 3);
+    }
+}
+
+void MenuWindow::on_pushButton_6_pressed()
+{
+    // Изменяем эффект тени при нажатии
+    auto effect = dynamic_cast<QGraphicsDropShadowEffect*>(ui->pushButton_6->graphicsEffect());
+    if (effect) {
+        effect->setBlurRadius(30);
+        effect->setColor(QColor(0, 0, 0, 160));
+        effect->setOffset(5, 5);
+    }
+}
+
+
+void MenuWindow::on_pushButton_6_released()
+{
+    // Восстанавливаем эффект тени при отпускании
+    auto effect = dynamic_cast<QGraphicsDropShadowEffect*>(ui->pushButton_6->graphicsEffect());
+    if (effect) {
+        effect->setBlurRadius(30);
+        effect->setOffset(3, 3);
+    }
+}
+
+void MenuWindow::on_pushButton_7_pressed()
+{
+    // Изменяем эффект тени при нажатии
+    auto effect = dynamic_cast<QGraphicsDropShadowEffect*>(ui->pushButton_7->graphicsEffect());
+    if (effect) {
+        effect->setBlurRadius(30);
+        effect->setColor(QColor(0, 0, 0, 160));
+        effect->setOffset(5, 5);
+    }
+}
+
+
+void MenuWindow::on_pushButton_7_released()
+{
+    // Восстанавливаем эффект тени при отпускании
+    auto effect = dynamic_cast<QGraphicsDropShadowEffect*>(ui->pushButton_7->graphicsEffect());
     if (effect) {
         effect->setBlurRadius(30);
         effect->setOffset(3, 3);
