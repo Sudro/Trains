@@ -121,6 +121,7 @@ debug/qrc_Resourses.cpp: ../../Resourses.qrc \
 		../../newPlusIcon.svg \
 		../../Group\ 29.png \
 		../../newMiniTrainIcon.png \
+		../../routesButton.png \
 		../../Start.svg \
 		../../adminButton2.png \
 		../../returnStrelka.svg \
@@ -735,6 +736,14 @@ debug/moc_menuwindow.cpp: ../../menuwindow.h \
 		../../../../6.7.0/mingw_64/include/QtGui/qinputmethod.h \
 		../../../../6.7.0/mingw_64/include/QtCore/qlocale.h \
 		../../../../6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+		../../../../6.7.0/mingw_64/include/QtGui/QMouseEvent \
+		../../../../6.7.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
+		../../../../6.7.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
+		../../../../6.7.0/mingw_64/include/QtCore/QPropertyAnimation \
+		../../../../6.7.0/mingw_64/include/QtCore/qpropertyanimation.h \
+		../../../../6.7.0/mingw_64/include/QtCore/qvariantanimation.h \
+		../../../../6.7.0/mingw_64/include/QtCore/qabstractanimation.h \
+		../../../../6.7.0/mingw_64/include/QtCore/qeasingcurve.h \
 		debug/moc_predefs.h \
 		../../../../6.7.0/mingw_64/bin/moc.exe
 	D:\qt\6.7.0\mingw_64\bin\moc.exe $(DEFINES) --include D:/qt/projects/trains/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/debug/moc_predefs.h -ID:/qt/6.7.0/mingw_64/mkspecs/win32-g++ -ID:/qt/projects/trains -ID:/qt/6.7.0/mingw_64/include -ID:/qt/6.7.0/mingw_64/include/QtWidgets -ID:/qt/6.7.0/mingw_64/include/QtGui -ID:/qt/6.7.0/mingw_64/include/QtCore -I. -ID:/qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\menuwindow.h -o debug\moc_menuwindow.cpp
@@ -981,7 +990,8 @@ debug/choicewindow.o: ../../choicewindow.cpp ../../choicewindow.h \
 		../../mainwindow.h \
 		../../../../6.7.0/mingw_64/include/QtWidgets/QMainWindow \
 		../../../../6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
-		../../../../6.7.0/mingw_64/include/QtWidgets/qtabwidget.h
+		../../../../6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../menuwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\choicewindow.o ..\..\choicewindow.cpp
 
 debug/main.o: ../../main.cpp ../../mainwindow.h \
@@ -1586,7 +1596,32 @@ debug/menuwindow.o: ../../menuwindow.cpp ../../menuwindow.h \
 		../../../../6.7.0/mingw_64/include/QtGui/qinputmethod.h \
 		../../../../6.7.0/mingw_64/include/QtCore/qlocale.h \
 		../../../../6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		ui_menuwindow.h
+		../../../../6.7.0/mingw_64/include/QtGui/QMouseEvent \
+		../../../../6.7.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
+		../../../../6.7.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
+		../../../../6.7.0/mingw_64/include/QtCore/QPropertyAnimation \
+		../../../../6.7.0/mingw_64/include/QtCore/qpropertyanimation.h \
+		../../../../6.7.0/mingw_64/include/QtCore/qvariantanimation.h \
+		../../../../6.7.0/mingw_64/include/QtCore/qabstractanimation.h \
+		../../../../6.7.0/mingw_64/include/QtCore/qeasingcurve.h \
+		ui_menuwindow.h \
+		../../../../6.7.0/mingw_64/include/QtCore/QVariant \
+		../../../../6.7.0/mingw_64/include/QtGui/QIcon \
+		../../../../6.7.0/mingw_64/include/QtWidgets/QApplication \
+		../../../../6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		../../../../6.7.0/mingw_64/include/QtWidgets/QLabel \
+		../../../../6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+		../../../../6.7.0/mingw_64/include/QtWidgets/qframe.h \
+		../../../../6.7.0/mingw_64/include/QtGui/qpicture.h \
+		../../../../6.7.0/mingw_64/include/QtGui/qtextdocument.h \
+		../../../../6.7.0/mingw_64/include/QtWidgets/QPushButton \
+		../../../../6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		../../../../6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		../../choicewindow.h \
+		../../mainwindow.h \
+		../../../../6.7.0/mingw_64/include/QtWidgets/QMainWindow \
+		../../../../6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
+		../../../../6.7.0/mingw_64/include/QtWidgets/qtabwidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\menuwindow.o ..\..\menuwindow.cpp
 
 debug/qrc_Resourses.o: debug/qrc_Resourses.cpp 

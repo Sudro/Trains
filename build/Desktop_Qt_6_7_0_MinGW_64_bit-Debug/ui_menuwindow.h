@@ -47,7 +47,7 @@ public:
         pushButton_2->setContextMenuPolicy(Qt::CustomContextMenu);
         pushButton_2->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/userButton2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/routesButton.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_2->setIcon(icon);
         pushButton_2->setIconSize(QSize(300, 200));
         pushButton_5 = new QPushButton(MenuWindow);
@@ -109,7 +109,9 @@ public:
         pushButton_6->setFocusPolicy(Qt::ClickFocus);
         pushButton_6->setContextMenuPolicy(Qt::CustomContextMenu);
         pushButton_6->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
-        pushButton_6->setIcon(icon);
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/userButton2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_6->setIcon(icon4);
         pushButton_6->setIconSize(QSize(300, 200));
         pushButton_7 = new QPushButton(MenuWindow);
         pushButton_7->setObjectName("pushButton_7");
@@ -119,7 +121,7 @@ public:
         pushButton_7->setFocusPolicy(Qt::ClickFocus);
         pushButton_7->setContextMenuPolicy(Qt::CustomContextMenu);
         pushButton_7->setStyleSheet(QString::fromUtf8("border-radius: 20px; "));
-        pushButton_7->setIcon(icon);
+        pushButton_7->setIcon(icon4);
         pushButton_7->setIconSize(QSize(300, 200));
 
         retranslateUi(MenuWindow);

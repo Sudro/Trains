@@ -42,7 +42,7 @@
    </property>
    <property name="icon">
     <iconset resource="Resourses.qrc">
-     <normaloff>:/userButton2.png</normaloff>:/userButton2.png</iconset>
+     <normaloff>:/routesButton.png</normaloff>:/routesButton.png</iconset>
    </property>
    <property name="iconSize">
     <size>
